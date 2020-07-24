@@ -31,6 +31,10 @@
 #include <vendor/display/config/1.16/IDisplayConfig.h>
 #endif
 
+#ifdef QCOM_UM_FAMILY
+using vendor::qti::hardware::display::composer::V2_1::IQtiComposerClient;
+#endif
+
 namespace android {
 
 using hardware::Return;
